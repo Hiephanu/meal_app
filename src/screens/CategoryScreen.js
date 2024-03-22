@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         color: '#F7550B',
         marginLeft:'10%',
         fontSize: 25,
-        fontWeight: '600',
+        fontWeight: 600,
         marginLeft:'5%',
         marginTop: 25,
         marginBottom: 25,
