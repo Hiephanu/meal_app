@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     mainTitle: {
-        fontWeight: 600,
+        fontWeight: "bold",
         fontSize: 25,
         color: '#F7550B',
         textAlign: 'center',
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#F7550B',
-        fontWeight: 500,
+        fontWeight: "bold",
         marginTop: 10
     },
     criteria: {

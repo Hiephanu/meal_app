@@ -16,7 +16,7 @@ const MealDetailItem = ({title,content}) => {
 const styles = StyleSheet.create({
     title: {
         color: '#F7550B',
-        fontWeight:500
+        fontWeight:"bold"
     },
     criteria:{
         flexDirection:'row',

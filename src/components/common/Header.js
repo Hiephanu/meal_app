@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     title: {
         color: '#F7550B',
         fontSize: 25,
-        fontWeight: 600,
+        fontWeight: 'bold',
         marginTop: 10
     },
     setting:{
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     },
     name: {
         fontSize: 15,
-        fontWeight: 600
+        fontWeight: 'bold'
     },
     job: {
         fontSize: 15,
