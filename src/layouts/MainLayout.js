@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Dimensions } from 'react-native';
-import NavBar from "../components/common/NavBar";
-import Header from "../components/common/Header";
+import React, { useState, useEffect } from 'react'
+import { StyleSheet, View, Dimensions, Pressable } from 'react-native'
+import NavBar from "../components/common/NavBar"
+import Header from "../components/common/Header"
 
 const MainLayout = ({ children }) => {
-    const [isPortrait, setIsPortrait] = useState(true)
+    const [isPortrait, setIsPortrait] = useState()
     const updateLayout = () => {
-        const { width, height } = Dimensions.get('window');
+        const { width, height } = Dimensions.get('window')
         setIsPortrait(height > width);
     };
     useEffect(() => {
@@ -14,10 +14,16 @@ const MainLayout = ({ children }) => {
         Dimensions.addEventListener('change', updateLayout);
         return () => {
             Dimensions.removeEventListener('change', updateLayout);
-        };
-    }, []);
+        }
+    }, [])
+    const logS = ()=>{
+        alert(isPortrait)
+    }
     return (
         <View style={styles.wrapper}>
+            <Pressable onPress={()=>logS()}>
+                <Text>Log</Text>
+            </Pressable>
             {isPortrait && (
                 <View style={styles.header}>
                     <Header />

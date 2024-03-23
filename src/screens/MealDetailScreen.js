@@ -99,7 +99,8 @@ const styles = StyleSheet.create({
     image: {
         width: '100%',
         height: 250,
-        borderEndEndRadius:10
+        borderBottomLeftRadius:10,
+        borderBottomRightRadius:10
     },
     imageHorionzal:{
         width:'100%',

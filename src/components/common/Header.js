@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     icon: {
         padding: 7,
         backgroundColor: 'black',
-        color: 'white',
+        color: '#ffffff',
         borderRadius: 12,
         alignItems: 'center'
     }
