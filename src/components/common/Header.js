@@ -81,11 +81,11 @@ const styles = StyleSheet.create({
     },
     name: {
         fontSize: 15,
-        fontWeight: 'bold'
+        fontWeight: "bold"
     },
     job: {
         fontSize: 15,
-        fontWeight: 15
+        fontWeight: "bold"
     },
     icon: {
         padding: 7,
