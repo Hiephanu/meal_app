@@ -7,27 +7,33 @@ import CategoryItem from '../components/category/CategoryItem';
 const CategoryScreen = () => {
     return (
         <MainLayout>
-            <View style={styles.titleWrapper}>
-                <Text style={styles.title}>Category</Text>
-            </View>
-            <ScrollView style={styles.scrollView}>
-                <View style={styles.wrapper}>
-                    {CATEGORIES.map(category => (
-                        <CategoryItem key={category.id} category={category} />
-                    ))}
+            <View style={styles.wrap}>
+                <View style={styles.titleWrapper}>
+                    <Text style={styles.title}>Category</Text>
                 </View>
-            </ScrollView>
+                <ScrollView style={styles.scrollView}>
+                    <View style={styles.wrapper}>
+                        {CATEGORIES.map(category => (
+                            <CategoryItem key={category.id} category={category} />
+                        ))}
+                    </View>
+                </ScrollView>
+            </View>
         </MainLayout>
     );
 };
 
 const styles = StyleSheet.create({
+    wrap:{
+        width:'100%',
+        flex:1
+    },
     title: {
         color: '#F7550B',
-        marginLeft:'10%',
+        marginLeft: '10%',
         fontSize: 25,
         fontWeight: "bold",
-        marginLeft:'5%',
+        marginLeft: '5%',
         marginTop: 25,
         marginBottom: 25,
     },
@@ -41,7 +47,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     scrollView: {
-        flex:1
+        flex: 1
     }
 });
 

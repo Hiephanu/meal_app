@@ -17,10 +17,8 @@ const MealItem = ({ meal }) => {
     const hanleFavorite = (id) => {
         if (favoriteMeals.includes(id)) {
             dispatch(removeFavoriteMeal(meal.id))
-            alert("Remove this meal in favorite list")
         } else {
             dispatch(addFavoriteMeal(meal))
-            alert("Add this meal in favorite list")
         }
     }
     return (
@@ -79,14 +77,14 @@ const styles = StyleSheet.create({
     wrapper: {
         width: '95%',
         marginLeft: '2.5%',
-        shadowColor: '#000',
+        shadowColor: '#9ba9bd',
         shadowOffset: {
             width: 0,
             height: 1,
         },
         shadowOpacity: 0.2,
         shadowRadius: 3.84,
-        elevation: 5,
+        elevation: 3,
         marginTop: 20,
         borderRadius: 20,
         padding: 20

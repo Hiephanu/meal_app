@@ -15,7 +15,7 @@ const MainLayout = ({ children }) => {
         return () => {
             Dimensions.removeEventListener('change', updateLayout);
         };
-    }, [isPortrait]);
+    }, []);
     return (
         <View style={styles.wrapper}>
             {isPortrait && (
@@ -41,7 +41,10 @@ const styles = StyleSheet.create({
     header: {
     },
     content: {
-        flex: 1,
+        width:"100%",
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center'
     },
     nav: {
         position: 'absolute',

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   appWrapper:{
     flex:1,
     backgroundColor:'#ffffff',
-    paddingTop:20
+    paddingTop:30
   }
 })
 
