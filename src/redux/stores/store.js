@@ -8,7 +8,7 @@ const rootReducer = combineReducers(
 )
 
 const configureStore = () => {
-    return createStore(rootReducer);
-};
+    return createStore(rootReducer)
+}
 
 export default configureStore

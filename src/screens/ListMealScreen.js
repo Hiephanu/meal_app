@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     mealItem: {
         flex: 1,
         height: '100%',
-        // backgroundColor: '#9ba9bd',
         paddingBottom:100
     },
 });

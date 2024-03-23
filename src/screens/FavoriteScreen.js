@@ -4,6 +4,7 @@ import { useSelector } from "react-redux"
 import NavLayout from "../layouts/NavLayout"
 const FavoriteMealScreen = () => {
     const favoriteMeals = useSelector(state => state.favoriteMeals.favoriteMeals)
+    console.log(favoriteMeals)
     return (
         <NavLayout title={"Favorite List"}>
             {favoriteMeals.length === 0 ?
@@ -15,7 +16,7 @@ const FavoriteMealScreen = () => {
                     <FlatList
                         data={favoriteMeals}
                         renderItem={({ item }) => <MealItem meal={item} />}
-                        numColumns={2}
+                        numColumns={1}
                     />
                 </View>
             }
