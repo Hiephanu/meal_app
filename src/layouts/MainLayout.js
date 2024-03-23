@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { StyleSheet, View, Dimensions, Pressable } from 'react-native'
+import { StyleSheet, View, Dimensions, Pressable,Text } from 'react-native'
 import NavBar from "../components/common/NavBar"
 import Header from "../components/common/Header"
 
