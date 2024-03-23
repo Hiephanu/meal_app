@@ -6,7 +6,6 @@ import MealItem from "../components/meal/MealItem";
 const ListMealScreen = ({ route }) => {
     const category = route.params.category;
     const meal = getMealByCategory(category.id);
-    console.log(meal);
     return (
         <NavLayout title={category.title}>
             <ScrollView>

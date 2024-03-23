@@ -4,7 +4,6 @@ import { useSelector } from "react-redux"
 import NavLayout from "../layouts/NavLayout"
 const FavoriteMealScreen = () => {
     const favoriteMeals = useSelector(state => state.favoriteMeals.favoriteMeals)
-    console.log(favoriteMeals)
     return (
         <NavLayout title={"Favorite List"}>
             {favoriteMeals.length === 0 ?
