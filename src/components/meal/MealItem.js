@@ -69,7 +69,6 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         justifyContent: 'center',
         borderRadius: 10,
-        // marginTop: 20,
     },
     heartIcon: {
         marginTop: 15
@@ -92,7 +91,6 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         width: '80%',
-        // marginTop: 10
     },
     timeWrapper: {
         flexDirection: 'row',

@@ -1,26 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { StyleSheet, View, Dimensions, Pressable,Text } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import NavBar from "../components/common/NavBar"
 import Header from "../components/common/Header"
 
 const MainLayout = ({ children }) => {
-    const [isPortrait, setIsPortrait] = useState()
-    const updateLayout = () => {
-        const windowWidth = Dimensions.get('window').width;
-        const windowHeight = Dimensions.get('window').height;
-        setIsPortrait(windowHeight > windowWidth);
-    };
-    useEffect(() => {
-        updateLayout()
-        Dimensions.addEventListener('change', updateLayout);
-    }, [])
     return (
         <View style={styles.wrapper}>
-            {/* {isPortrait && ( */}
-                <View style={styles.header}>
-                    <Header />
-                </View>
-            {/* )} */}
+            <View>
+                <Header />
+            </View>
             <View style={styles.content}>
                 {children}
             </View>
@@ -36,13 +24,11 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%'
     },
-    header: {
-    },
     content: {
-        width:"100%",
-        flex:1,
-        justifyContent:'center',
-        alignItems:'center'
+        width: "100%",
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     nav: {
         position: 'absolute',
