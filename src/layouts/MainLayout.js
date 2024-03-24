@@ -16,14 +16,8 @@ const MainLayout = ({ children }) => {
             Dimensions.removeEventListener('change', updateLayout);
         }
     }, [])
-    const logS = ()=>{
-        alert(isPortrait)
-    }
     return (
         <View style={styles.wrapper}>
-            <Pressable onPress={()=>logS()}>
-                <Text>Log</Text>
-            </Pressable>
             {isPortrait && (
                 <View style={styles.header}>
                     <Header />

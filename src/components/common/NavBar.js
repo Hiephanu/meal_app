@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     wrapper: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        height: 60,
+        height: 50,
         alignItems: 'center',
         backgroundColor: 'white',
         borderTopWidth: 4,

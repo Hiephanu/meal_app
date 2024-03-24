@@ -25,7 +25,7 @@ const MealItem = ({ meal }) => {
         <View style={styles.wrapper}>
             <Pressable onPress={naviagteToDetail}>
                 <View style={styles.mealItem}>
-                    <Image source={{ uri: `${meal.imageUrl}` }} style={styles.image} props={{ resizeMode: 'cover' }} />
+                    <Image source={{ uri: `${meal.imageUrl}` }} style={styles.image}/>
                     <Text style={styles.title}>{meal.title}</Text>
                 </View>
             </Pressable>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        width:'100%'
+        width: '100%'
     },
     action: {
         flexDirection: 'row',
@@ -61,11 +61,11 @@ const styles = StyleSheet.create({
         marginRight: 20,
         justifyContent: 'space-between',
         alignItems: 'center',
-        width:'90%'
+        width: '90%'
     },
     image: {
         width: '100%',
-        height: 200,
+        height: 400,
         resizeMode: 'contain',
         justifyContent: 'center',
         borderRadius: 10,
@@ -77,14 +77,10 @@ const styles = StyleSheet.create({
     wrapper: {
         width: '95%',
         marginLeft: '2.5%',
-        shadowColor: '#9ba9bd',
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
+        shadowColor: '#171717',
+        shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.2,
-        shadowRadius: 3.84,
-        elevation: 3,
+        shadowRadius: 3,
         marginTop: 20,
         borderRadius: 20,
         padding: 20
@@ -96,17 +92,17 @@ const styles = StyleSheet.create({
         width: '80%',
         marginTop: 10
     },
-    timeWrapper:{
-        flexDirection:'row',
-        gap:10,
-        color:'#F7550B',
-        marginLeft:20,
-        marginTop:15,
-        width:'90%'
+    timeWrapper: {
+        flexDirection: 'row',
+        gap: 10,
+        color: '#F7550B',
+        marginLeft: 20,
+        marginTop: 15,
+        width: '90%'
     },
-    time:{
-        color:'#F7550B',
-        marginTop:2
+    time: {
+        color: '#F7550B',
+        marginTop: 2
     },
     complexity: {
         marginTop: 15
