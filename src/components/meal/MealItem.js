@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        height: 400,
+        height: 300,
         resizeMode: 'contain',
         justifyContent: 'center',
         borderRadius: 10,
@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
     wrapper: {
         width: '95%',
         marginLeft: '2.5%',
+        backgroundColor:'#ffffff',
         shadowColor: '#171717',
         shadowOffset: { width: -2, height: 2 },
         shadowOpacity: 0.1,
