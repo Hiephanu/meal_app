@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         width: "90%",
         paddingVertical: 15,
         marginTop: 10,
-        marginLeft: 10,
+        // marginLeft: 10,
         borderRadius:10
     },
     pressable:{

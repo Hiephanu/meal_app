@@ -6,15 +6,13 @@ import Header from "../components/common/Header"
 const MainLayout = ({ children }) => {
     const [isPortrait, setIsPortrait] = useState()
     const updateLayout = () => {
-        const { width, height } = Dimensions.get('window')
-        setIsPortrait(height > width);
+        const windowWidth = Dimensions.get('window').width;
+        const windowHeight = Dimensions.get('window').height;
+        setIsPortrait(windowHeight > windowWidth);
     };
     useEffect(() => {
         updateLayout()
         Dimensions.addEventListener('change', updateLayout);
-        return () => {
-            Dimensions.removeEventListener('change', updateLayout);
-        }
     }, [])
     return (
         <View style={styles.wrapper}>

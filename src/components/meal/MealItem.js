@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         justifyContent: 'center',
         borderRadius: 10,
-        marginTop: 20,
+        // marginTop: 20,
     },
     heartIcon: {
         marginTop: 15
@@ -78,9 +78,10 @@ const styles = StyleSheet.create({
         width: '95%',
         marginLeft: '2.5%',
         shadowColor: '#171717',
-        shadowOffset: { width: -2, height: 4 },
-        shadowOpacity: 0.2,
-        shadowRadius: 3,
+        shadowOffset: { width: -2, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 1,
+        elevation: 1,
         marginTop: 20,
         borderRadius: 20,
         padding: 20
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         width: '80%',
-        marginTop: 10
+        // marginTop: 10
     },
     timeWrapper: {
         flexDirection: 'row',

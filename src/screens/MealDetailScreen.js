@@ -73,7 +73,8 @@ const styles = StyleSheet.create({
     contentContainer: {
         width:"100%",
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        paddingBottom:50
     },
     mainTitle: {
         fontWeight: "bold",

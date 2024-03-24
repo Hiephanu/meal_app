@@ -41,13 +41,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
     },
     wrapper: {
-        flex: 1,
         backgroundColor: '#ffffff',
         paddingBottom: 100,
         alignItems: 'center',
     },
     scrollView: {
-        flex: 1
+        flex:1
     }
 });
 
