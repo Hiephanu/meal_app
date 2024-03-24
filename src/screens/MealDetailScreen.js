@@ -12,11 +12,8 @@ const MealDetailScreen = ({ route }) => {
     };
     useEffect(() => {
         updateLayout()
-        Dimensions.addEventListener('change', updateLayout);
-        return () => {
-            Dimensions.removeEventListener('change', updateLayout);
-        };
-    }, [isPortrait]);
+        Dimensions.addEventListener('change', updateLayout)
+    }, []);
     return (
         <NavLayout title={meal.title}>
             <ScrollView style={styles.scroll} contentContainerStyle={styles.contentContainer}>

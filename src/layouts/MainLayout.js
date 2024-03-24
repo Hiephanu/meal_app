@@ -16,11 +16,11 @@ const MainLayout = ({ children }) => {
     }, [])
     return (
         <View style={styles.wrapper}>
-            {isPortrait && (
+            {/* {isPortrait && ( */}
                 <View style={styles.header}>
                     <Header />
                 </View>
-            )}
+            {/* )} */}
             <View style={styles.content}>
                 {children}
             </View>
